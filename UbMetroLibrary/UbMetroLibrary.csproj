@@ -1,0 +1,656 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Page Remove="Styles\Clean\Controls.xaml" />
+    <Page Remove="Styles\Clean\GroupBox.xaml" />
+    <Page Remove="Styles\Clean\MetroWindow.xaml" />
+    <Page Remove="Styles\Clean\StatusBar.xaml" />
+    <Page Remove="Styles\Clean\WindowButtonCommands.xaml" />
+    <Page Remove="Styles\Clean\WindowButtons.xaml" />
+    <Page Remove="Styles\Clean\WindowCommands.xaml" />
+    <Page Remove="Styles\Controls.Buttons.xaml" />
+    <Page Remove="Styles\Controls.Calendar.xaml" />
+    <Page Remove="Styles\Controls.CheckBox.xaml" />
+    <Page Remove="Styles\Controls.ComboBox.xaml" />
+    <Page Remove="Styles\Controls.ContentControl.xaml" />
+    <Page Remove="Styles\Controls.ContextMenu.xaml" />
+    <Page Remove="Styles\Controls.DataGrid.xaml" />
+    <Page Remove="Styles\Controls.DatePicker.xaml" />
+    <Page Remove="Styles\Controls.Expander.xaml" />
+    <Page Remove="Styles\Controls.FlatButton.xaml" />
+    <Page Remove="Styles\Controls.FlatSlider.xaml" />
+    <Page Remove="Styles\Controls.GridSplitter.xaml" />
+    <Page Remove="Styles\Controls.GroupBox.xaml" />
+    <Page Remove="Styles\Controls.Hyperlink.xaml" />
+    <Page Remove="Styles\Controls.Label.xaml" />
+    <Page Remove="Styles\Controls.ListBox.xaml" />
+    <Page Remove="Styles\Controls.ListView.xaml" />
+    <Page Remove="Styles\Controls.Menu.xaml" />
+    <Page Remove="Styles\Controls.MenuItem.xaml" />
+    <Page Remove="Styles\Controls.Page.xaml" />
+    <Page Remove="Styles\Controls.PasswordBox.xaml" />
+    <Page Remove="Styles\Controls.ProgressBar.xaml" />
+    <Page Remove="Styles\Controls.RadioButton.xaml" />
+    <Page Remove="Styles\Controls.RichTextBox.xaml" />
+    <Page Remove="Styles\Controls.Scrollbars.xaml" />
+    <Page Remove="Styles\Controls.Shadows.xaml" />
+    <Page Remove="Styles\Controls.Shared.xaml" />
+    <Page Remove="Styles\Controls.Slider.xaml" />
+    <Page Remove="Styles\Controls.StatusBar.xaml" />
+    <Page Remove="Styles\Controls.TabControl.xaml" />
+    <Page Remove="Styles\Controls.TextBlock.xaml" />
+    <Page Remove="Styles\Controls.TextBox.xaml" />
+    <Page Remove="Styles\Controls.Toolbar.xaml" />
+    <Page Remove="Styles\Controls.Tooltip.xaml" />
+    <Page Remove="Styles\Controls.TreeView.xaml" />
+    <Page Remove="Styles\Controls.ValidationError.xaml" />
+    <Page Remove="Styles\Controls.xaml" />
+    <Page Remove="Styles\Fonts.xaml" />
+    <Page Remove="Styles\Themes\Dark.Amber.xaml" />
+    <Page Remove="Styles\Themes\Dark.Blue.xaml" />
+    <Page Remove="Styles\Themes\Dark.Brown.xaml" />
+    <Page Remove="Styles\Themes\Dark.Cobalt.xaml" />
+    <Page Remove="Styles\Themes\Dark.Crimson.xaml" />
+    <Page Remove="Styles\Themes\Dark.Cyan.xaml" />
+    <Page Remove="Styles\Themes\Dark.Emerald.xaml" />
+    <Page Remove="Styles\Themes\Dark.Green.xaml" />
+    <Page Remove="Styles\Themes\Dark.Indigo.xaml" />
+    <Page Remove="Styles\Themes\Dark.Lime.xaml" />
+    <Page Remove="Styles\Themes\Dark.Magenta.xaml" />
+    <Page Remove="Styles\Themes\Dark.Mauve.xaml" />
+    <Page Remove="Styles\Themes\Dark.Olive.xaml" />
+    <Page Remove="Styles\Themes\Dark.Orange.xaml" />
+    <Page Remove="Styles\Themes\Dark.Pink.xaml" />
+    <Page Remove="Styles\Themes\Dark.Purple.xaml" />
+    <Page Remove="Styles\Themes\Dark.Red.xaml" />
+    <Page Remove="Styles\Themes\Dark.Sienna.xaml" />
+    <Page Remove="Styles\Themes\Dark.Steel.xaml" />
+    <Page Remove="Styles\Themes\Dark.Taupe.xaml" />
+    <Page Remove="Styles\Themes\Dark.Teal.xaml" />
+    <Page Remove="Styles\Themes\Dark.Violet.xaml" />
+    <Page Remove="Styles\Themes\Dark.Yellow.xaml" />
+    <Page Remove="Styles\Themes\Light.Amber.xaml" />
+    <Page Remove="Styles\Themes\Light.Blue.xaml" />
+    <Page Remove="Styles\Themes\Light.Brown.xaml" />
+    <Page Remove="Styles\Themes\Light.Cobalt.xaml" />
+    <Page Remove="Styles\Themes\Light.Crimson.xaml" />
+    <Page Remove="Styles\Themes\Light.Cyan.xaml" />
+    <Page Remove="Styles\Themes\Light.Emerald.xaml" />
+    <Page Remove="Styles\Themes\Light.Green.xaml" />
+    <Page Remove="Styles\Themes\Light.Indigo.xaml" />
+    <Page Remove="Styles\Themes\Light.Lime.xaml" />
+    <Page Remove="Styles\Themes\Light.Magenta.xaml" />
+    <Page Remove="Styles\Themes\Light.Mauve.xaml" />
+    <Page Remove="Styles\Themes\Light.Olive.xaml" />
+    <Page Remove="Styles\Themes\Light.Orange.xaml" />
+    <Page Remove="Styles\Themes\Light.Pink.xaml" />
+    <Page Remove="Styles\Themes\Light.Purple.xaml" />
+    <Page Remove="Styles\Themes\Light.Red.xaml" />
+    <Page Remove="Styles\Themes\Light.Sienna.xaml" />
+    <Page Remove="Styles\Themes\Light.Steel.xaml" />
+    <Page Remove="Styles\Themes\Light.Taupe.xaml" />
+    <Page Remove="Styles\Themes\Light.Teal.xaml" />
+    <Page Remove="Styles\Themes\Light.Violet.xaml" />
+    <Page Remove="Styles\Themes\Light.Yellow.xaml" />
+    <Page Remove="Styles\Themes\Theme.Template.xaml" />
+    <Page Remove="Styles\VS\Button.xaml" />
+    <Page Remove="Styles\VS\Colors.xaml" />
+    <Page Remove="Styles\VS\ContextMenu.xaml" />
+    <Page Remove="Styles\VS\Controls.xaml" />
+    <Page Remove="Styles\VS\Expander.xaml" />
+    <Page Remove="Styles\VS\GroupBox.xaml" />
+    <Page Remove="Styles\VS\ListBox.xaml" />
+    <Page Remove="Styles\VS\Menu.xaml" />
+    <Page Remove="Styles\VS\MenuItem.xaml" />
+    <Page Remove="Styles\VS\MetroWindow.xaml" />
+    <Page Remove="Styles\VS\ScrollBar.xaml" />
+    <Page Remove="Styles\VS\Shadows.xaml" />
+    <Page Remove="Styles\VS\TabControl.xaml" />
+    <Page Remove="Styles\VS\TextBox.xaml" />
+    <Page Remove="Themes\Badged.xaml" />
+    <Page Remove="Themes\ColorPicker\ColorCanvas.xaml" />
+    <Page Remove="Themes\ColorPicker\ColorComponentSlider.xaml" />
+    <Page Remove="Themes\ColorPicker\ColorEyeDropper.xaml" />
+    <Page Remove="Themes\ColorPicker\ColorPalette.xaml" />
+    <Page Remove="Themes\ColorPicker\ColorPicker.xaml" />
+    <Page Remove="Themes\ContentControlEx.xaml" />
+    <Page Remove="Themes\DateTimePicker.xaml" />
+    <Page Remove="Themes\Dialogs\BaseMetroDialog.xaml" />
+    <Page Remove="Themes\Dialogs\InputDialog.xaml" />
+    <Page Remove="Themes\Dialogs\LoginDialog.xaml" />
+    <Page Remove="Themes\Dialogs\MessageDialog.xaml" />
+    <Page Remove="Themes\Dialogs\ProgressDialog.xaml" />
+    <Page Remove="Themes\DropDownButton.xaml" />
+    <Page Remove="Themes\FlipView.xaml" />
+    <Page Remove="Themes\Flyout.xaml" />
+    <Page Remove="Themes\FlyoutsControl.xaml" />
+    <Page Remove="Themes\FontIcon.xaml" />
+    <Page Remove="Themes\Generic.xaml" />
+    <Page Remove="Themes\HamburgerMenu.xaml" />
+    <Page Remove="Themes\HamburgerMenuTemplate.xaml" />
+    <Page Remove="Themes\HotKeyBox.xaml" />
+    <Page Remove="Themes\MetroAnimatedSingleRowTabControl.xaml" />
+    <Page Remove="Themes\MetroAnimatedTabControl.xaml" />
+    <Page Remove="Themes\MetroContentControl.xaml" />
+    <Page Remove="Themes\MetroHeader.xaml" />
+    <Page Remove="Themes\MetroProgressBar.xaml" />
+    <Page Remove="Themes\MetroTabControl.xaml" />
+    <Page Remove="Themes\MetroTabItem.xaml" />
+    <Page Remove="Themes\MetroWindow.xaml" />
+    <Page Remove="Themes\MultiSelectionComboBox.xaml" />
+    <Page Remove="Themes\NumericUpDown.xaml" />
+    <Page Remove="Themes\PathIcon.xaml" />
+    <Page Remove="Themes\Pivot.xaml" />
+    <Page Remove="Themes\ProgressRing.xaml" />
+    <Page Remove="Themes\RangeSlider.xaml" />
+    <Page Remove="Themes\RevealImage.xaml" />
+    <Page Remove="Themes\SplitButton.xaml" />
+    <Page Remove="Themes\SplitView.xaml" />
+    <Page Remove="Themes\Thumb.xaml" />
+    <Page Remove="Themes\Tile.xaml" />
+    <Page Remove="Themes\ToggleSwitch.xaml" />
+    <Page Remove="Themes\TransitioningContentControl.xaml" />
+    <Page Remove="Themes\Underline.xaml" />
+    <Page Remove="Themes\WindowButtonCommands.xaml" />
+    <Page Remove="Themes\WindowCommands.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\MahApps.Metro\mahapps.metro.logo.png" Link="mahapps.metro.logo.png">
+      <PackagePath></PackagePath>
+      <Pack>True</Pack>
+    </None>
+    <None Include="Styles\Clean\Controls.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Clean\GroupBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Clean\MetroWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Clean\StatusBar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Clean\WindowButtonCommands.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Clean\WindowButtons.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Clean\WindowCommands.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Controls.Buttons.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Controls.Calendar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Controls.CheckBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Controls.ComboBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Controls.ContentControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Controls.ContextMenu.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Controls.DataGrid.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Controls.DatePicker.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Controls.Expander.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Controls.FlatButton.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Controls.FlatSlider.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Controls.GridSplitter.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Controls.GroupBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Controls.Hyperlink.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Controls.Label.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Controls.ListBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Controls.ListView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Controls.Menu.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Controls.MenuItem.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Controls.Page.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Controls.PasswordBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Controls.ProgressBar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Controls.RadioButton.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Controls.RichTextBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Controls.Scrollbars.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Controls.Shadows.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Controls.Shared.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Controls.Slider.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Controls.StatusBar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Controls.TabControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Controls.TextBlock.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Controls.TextBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Controls.Toolbar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Controls.Tooltip.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Controls.TreeView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Controls.ValidationError.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Controls.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Fonts.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Themes\Dark.Amber.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Themes\Dark.Blue.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Themes\Dark.Brown.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Themes\Dark.Cobalt.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Themes\Dark.Crimson.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Themes\Dark.Cyan.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Themes\Dark.Emerald.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Themes\Dark.Green.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Themes\Dark.Indigo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Themes\Dark.Lime.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Themes\Dark.Magenta.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Themes\Dark.Mauve.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Themes\Dark.Olive.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Themes\Dark.Orange.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Themes\Dark.Pink.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Themes\Dark.Purple.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Themes\Dark.Red.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Themes\Dark.Sienna.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Themes\Dark.Steel.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Themes\Dark.Taupe.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Themes\Dark.Teal.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Themes\Dark.Violet.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Themes\Dark.Yellow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Themes\Light.Amber.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Themes\Light.Blue.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Themes\Light.Brown.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Themes\Light.Cobalt.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Themes\Light.Crimson.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Themes\Light.Cyan.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Themes\Light.Emerald.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Themes\Light.Green.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Themes\Light.Indigo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Themes\Light.Lime.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Themes\Light.Magenta.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Themes\Light.Mauve.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Themes\Light.Olive.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Themes\Light.Orange.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Themes\Light.Pink.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Themes\Light.Purple.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Themes\Light.Red.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Themes\Light.Sienna.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Themes\Light.Steel.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Themes\Light.Taupe.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Themes\Light.Teal.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Themes\Light.Violet.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Themes\Light.Yellow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\Themes\Theme.Template.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\VS\Button.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\VS\Colors.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\VS\ContextMenu.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\VS\Controls.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\VS\Expander.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\VS\GroupBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\VS\ListBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\VS\Menu.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\VS\MenuItem.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\VS\MetroWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\VS\ScrollBar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\VS\Shadows.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\VS\TabControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Styles\VS\TextBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Themes\Badged.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Themes\ColorPicker\ColorCanvas.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Themes\ColorPicker\ColorComponentSlider.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Themes\ColorPicker\ColorEyeDropper.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Themes\ColorPicker\ColorPalette.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Themes\ColorPicker\ColorPicker.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Themes\ContentControlEx.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Themes\DateTimePicker.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Themes\Dialogs\BaseMetroDialog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Themes\Dialogs\InputDialog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Themes\Dialogs\LoginDialog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Themes\Dialogs\MessageDialog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Themes\Dialogs\ProgressDialog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Themes\DropDownButton.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Themes\FlipView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Themes\Flyout.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Themes\FlyoutsControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Themes\FontIcon.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Themes\Generic.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Themes\HamburgerMenu.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Themes\HamburgerMenuTemplate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Themes\HotKeyBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Themes\MetroAnimatedSingleRowTabControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Themes\MetroAnimatedTabControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Themes\MetroContentControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Themes\MetroHeader.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Themes\MetroProgressBar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Themes\MetroTabControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Themes\MetroTabItem.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Themes\MetroWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Themes\MultiSelectionComboBox.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Themes\NumericUpDown.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Themes\PathIcon.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Themes\Pivot.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Themes\ProgressRing.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Themes\RangeSlider.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Themes\RevealImage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Themes\SplitButton.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Themes\SplitView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Themes\Thumb.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Themes\Tile.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Themes\ToggleSwitch.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Themes\TransitioningContentControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Themes\Underline.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Themes\WindowButtonCommands.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+    <None Include="Themes\WindowCommands.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ControlzEx" Version="5.0.2" />
+    <PackageReference Include="JetBrains.Annotations" Version="2022.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Lang\ColorNames.Designer.cs">
+      <DependentUpon>ColorNames.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Lang\MultiSelectionComboBox.Designer.cs">
+      <DependentUpon>MultiSelectionComboBox.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Lang\ColorNames.resx">
+      <LastGenOutput>ColorNames.Designer.cs</LastGenOutput>
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Lang\MultiSelectionComboBox.resx">
+      <LastGenOutput>MultiSelectionComboBox.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
